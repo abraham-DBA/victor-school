@@ -1,8 +1,9 @@
+import Link from 'next/link';
 import React from 'react';
 
 const About = () => {
   return (
-    <section className="py-12 bg-white">
+    <section className="py-12 bg-white" id='about'>
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 items-center">
           
@@ -17,7 +18,7 @@ const About = () => {
             </div>
             {/* Image Decoration */}
             <div className="absolute -bottom-3 -right-3 bg-blue-600 text-white px-4 py-2 rounded-lg shadow-lg">
-              <span className="text-sm font-semibold">Est. 1998</span>
+              <span className="text-sm font-semibold">Est. 2026</span>
             </div>
           </div>
 
@@ -64,9 +65,9 @@ const About = () => {
 
             {/* Call to Action */}
             <div className="pt-4">
-              <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors shadow-sm">
+              <Link href="/about" className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors shadow-sm">
                 Learn More About Our School
-              </button>
+              </Link>
             </div>
           </div>
         </div>

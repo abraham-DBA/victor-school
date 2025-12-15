@@ -4,24 +4,27 @@ const NewsFeed = () => {
   const newsItems = [
     {
       id: 1,
-      date: "27 de abril, 2024",
-      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-      image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      date: "27 April, 2024",
+      title: "Promoting Quality Learning at Disney Victors Junior School",
+      excerpt: "Disney Victors Junior School continues to foster academic excellence through engaging lessons, dedicated teachers, and a supportive learning environment.",
+      image: "./hero.jpg"
+
     },
     {
       id: 2,
-      date: "15 de mayo, 2024",
-      title: "Celebramos la Vocación: Día de las Enfermeras",
-      excerpt: "Honramos a quienes cuidan de la salud con dedicación y pasión.",
-      image: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      date: "5 July, 2024",
+      title: "Visitation Day at Disney Victors Junior School",
+      excerpt: "Parents and guardians joined us to explore classrooms, meet teachers, and celebrate the achievements of our students.",
+
+      image: "./visitation.jpg"
     },
     {
       id: 3,
-      date: "23 al 27 de abril, 2024",
-      title: "Lectura que Une: Día del Libro",
-      excerpt: "Una semana llena de letras, creatividad y aprendizaje.",
-      image: "./hero.jpg"
+      date: "10 June, 2024",
+      title: "Annual Sports Day Celebration",
+      excerpt: "Students showcased their athletic skills, teamwork, and school spirit during a day full of fun and competitive sports activities.",
+
+      image: "./sports.jpg"
     }
   ];
 
@@ -37,8 +40,8 @@ const NewsFeed = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {newsItems.map((news) => (
             <div key={news.id} className="border border-gray-200 rounded-lg overflow-hidden hover:border-blue-300 transition-colors">
-              <img 
-                src={news.image} 
+              <img
+                src={news.image}
                 alt={news.title}
                 className="w-full h-40 object-cover"
               />

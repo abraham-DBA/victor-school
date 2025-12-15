@@ -22,13 +22,13 @@ const Action = () => {
               href="/enroll"
               className="px-8 py-4 bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold text-lg rounded-xl shadow-2xl transition-all hover:scale-105"
             >
-              🚀 Enroll Now - Limited Spots!
+              Enroll Now
             </a>
             <a 
               href="/virtual-tour"
               className="px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm border-2 border-white text-white font-bold text-lg rounded-xl transition-all"
             >
-              🎬 Take Virtual Tour
+              Contact Us
             </a>
           </div>
 
@@ -51,7 +51,7 @@ const Action = () => {
           </div>
 
           <p className="mt-8 text-sm opacity-80">
-            ⚡ First 50 enrollments get 20% off admission fees | 📅 Deadline: December 31, 2023
+            ⚡ First 50 enrollments get 20% off admission fees | 📅 Deadline: January 31, 2026
           </p>
         </div>
       </div>

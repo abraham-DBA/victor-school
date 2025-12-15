@@ -1,4 +1,6 @@
 "use client"
+import { Facebook, Instagram, Twitter, Youtube } from "lucide-react"
+import Link from "next/link"
 import { useState } from "react"
 
 const Header = () => {
@@ -14,12 +16,12 @@ const Header = () => {
                         <div className=" px-6 flex flex-col sm:flex-row items-center gap-1 sm:gap-4">
                             <div className="flex items-center gap-1.5">
                                 <span className="text-xs">✉️</span>
-                                <span className="truncate">info@disneyvictors.ac.ke</span>
+                                <span className="truncate">info@gmail.com</span>
                             </div>
                             <div className="hidden sm:block text-white/40">|</div>
                             <div className="flex items-center gap-1.5">
                                 <span className="text-xs">🕒</span>
-                                <span>8AM-4PM</span>
+                                <span>8:00 AM-4:00 PM</span>
                             </div>
                         </div>
 
@@ -27,21 +29,21 @@ const Header = () => {
                         <div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-4">
                             <div className="flex items-center gap-1.5">
                                 <span className="text-xs">📞</span>
-                                <span>+254 700 000 000</span>
+                                <span>+256 782 846 266</span>
                             </div>
                             <div className="hidden sm:block text-white/40">|</div>
                             <div className="flex items-center gap-3">
                                 <a href="#" className="hover:text-blue-200 transition-colors" title="Facebook">
-                                    <span className="text-sm">fb</span>
+                                    <span className="text-sm"><Facebook/></span>
                                 </a>
                                 <a href="#" className="hover:text-blue-200 transition-colors" title="Instagram">
-                                    <span className="text-sm">ig</span>
+                                    <span className="text-sm"><Instagram /></span>
                                 </a>
                                 <a href="#" className="hover:text-blue-200 transition-colors" title="Twitter">
-                                    <span className="text-sm">tw</span>
+                                    <span className="text-sm"><Twitter /></span>
                                 </a>
                                 <a href="#" className="hover:text-blue-200 transition-colors" title="YouTube">
-                                    <span className="text-sm">yt</span>
+                                    <span className="text-sm"><Youtube /></span>
                                 </a>
                             </div>
                         </div>
@@ -73,16 +75,16 @@ const Header = () => {
 
                 {/* Desktop Menu */}
                 <div className="hidden sm:flex items-center gap-8">
-                    <a href="#">Home</a>
-                    <a href="#">Programs</a>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
+                    <Link href="/">Home</Link>
+                    {/* <a href="#">Programs</a> */}
+                    <a href="#about">About</a>
+                    <Link href="/contact" className="cursor-pointer">Contact</Link>
 
 
 
-                    <button className="cursor-pointer px-8 py-2 bg-indigo-500 hover:bg-indigo-600 transition text-white rounded-full">
+                    <Link href="/register" className="cursor-pointer px-8 py-2 bg-indigo-500 hover:bg-indigo-600 transition text-white rounded-full">
                         Register
-                    </button>
+                    </Link>
                 </div>
 
                 <button onClick={() => open ? setOpen(false) : setOpen(true)} aria-label="Menu" className="sm:hidden">
@@ -96,8 +98,8 @@ const Header = () => {
 
                 {/* Mobile Menu */}
                 <div className={`${open ? 'flex' : 'hidden'} absolute top-[60px] left-0 w-full bg-white shadow-md py-4 flex-col items-start gap-2 px-5 text-sm md:hidden`}>
-                    <a href="#" className="block">Home</a>
-                    <a href="#" className="block">About</a>
+                    <Link href="/" className="block">Home</Link>
+                    <a href="#about" className="block">About</a>
                     <a href="#" className="block">Contact</a>
                     <button className="cursor-pointer px-6 py-2 mt-2 bg-indigo-500 hover:bg-indigo-600 transition text-white rounded-full text-sm">
                         Login

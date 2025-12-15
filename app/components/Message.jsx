@@ -41,10 +41,10 @@ const Message = () => {
 
             {/* Signature */}
             <div className="pt-6 border-t border-gray-100">
-              <div className="text-gray-500 italic mb-2 text-sm">Sigmatava</div>
+              
               <div>
-                <h4 className="text-xl font-bold text-gray-900">Johnson Smith</h4>
-                <p className="text-blue-600 text-sm">Everest Director</p>
+                <h4 className="text-xl font-bold text-gray-900">Katimbo Gordon</h4>
+                <p className="text-blue-600 text-sm">Director</p>
               </div>
             </div>
           </div>

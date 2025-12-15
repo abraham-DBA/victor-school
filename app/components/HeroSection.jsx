@@ -11,7 +11,7 @@ const HeroSection = () => {
       image: "./hero.jpg",
       title: "Excellence in Education",
       subtitle: "Disney Victors Junior School",
-      description: "Nurturing young minds for a brighter future since 1995",
+      description: "Nurturing young minds for a brighter future",
       ctaText: "Admissions Open",
       color: "from-blue-900/70 to-purple-900/60"
     },
@@ -118,21 +118,6 @@ const HeroSection = () => {
         ))}
       </div>
 
-      {/* Navigation Arrows */}
-      <button
-        onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-3 rounded-full transition-all backdrop-blur-sm z-20"
-        aria-label="Previous slide"
-      >
-        <ChevronLeft className="w-6 h-6" />
-      </button>
-      <button
-        onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-3 rounded-full transition-all backdrop-blur-sm z-20"
-        aria-label="Next slide"
-      >
-        <ChevronRight className="w-6 h-6" />
-      </button>
 
       {/* Slide Indicators */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2 z-20">
@@ -148,13 +133,6 @@ const HeroSection = () => {
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 animate-bounce hidden md:block">
-        <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white rounded-full mt-2" />
-        </div>
       </div>
     </section>
 
