@@ -98,10 +98,10 @@ const Header = () => {
 
                 {/* Mobile Menu */}
                 <div className={`${open ? 'flex' : 'hidden'} absolute top-full left-0 w-full bg-white shadow-lg py-4 flex-col items-start gap-3 px-5 text-sm md:hidden z-50 border-t border-gray-200`}>
-                    <Link href="/" className="block w-full hover:text-blue-600 transition py-2">Home</Link>
-                    <a href="#about" className="block w-full hover:text-blue-600 transition py-2">About</a>
-                    <Link href="/contact" className="block w-full hover:text-blue-600 transition py-2">Contact</Link>
-                    <Link href="/register" className="cursor-pointer px-6 py-2 mt-2 bg-indigo-500 hover:bg-indigo-600 transition text-white rounded-full text-sm w-full text-center">
+                    <Link href="/" className="block w-full hover:text-blue-600 dark:text-white transition py-2">Home</Link>
+                    <a href="#about" className="block w-full hover:text-blue-600 dark:text-white transition py-2">About</a>
+                    <Link href="/contact" className="block w-full hover:text-blue-600 dark:text-white transition py-2">Contact</Link>
+                    <Link href="/register" className="cursor-pointer px-6 py-2 mt-2 dark:text-white bg-indigo-500 hover:bg-indigo-600 transition text-white rounded-full text-sm w-full text-center">
                         Register
                     </Link>
                 </div>
