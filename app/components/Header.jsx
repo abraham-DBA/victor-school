@@ -97,13 +97,13 @@ const Header = () => {
                 </button>
 
                 {/* Mobile Menu */}
-                <div className={`${open ? 'flex' : 'hidden'} absolute top-[60px] left-0 w-full bg-white shadow-md py-4 flex-col items-start gap-2 px-5 text-sm md:hidden`}>
-                    <Link href="/" className="block">Home</Link>
-                    <a href="#about" className="block">About</a>
-                    <a href="#" className="block">Contact</a>
-                    <button className="cursor-pointer px-6 py-2 mt-2 bg-indigo-500 hover:bg-indigo-600 transition text-white rounded-full text-sm">
-                        Login
-                    </button>
+                <div className={`${open ? 'flex' : 'hidden'} absolute top-full left-0 w-full bg-white shadow-lg py-4 flex-col items-start gap-3 px-5 text-sm md:hidden z-50 border-t border-gray-200`}>
+                    <Link href="/" className="block w-full hover:text-blue-600 transition py-2">Home</Link>
+                    <a href="#about" className="block w-full hover:text-blue-600 transition py-2">About</a>
+                    <Link href="/contact" className="block w-full hover:text-blue-600 transition py-2">Contact</Link>
+                    <Link href="/register" className="cursor-pointer px-6 py-2 mt-2 bg-indigo-500 hover:bg-indigo-600 transition text-white rounded-full text-sm w-full text-center">
+                        Register
+                    </Link>
                 </div>
 
             </nav></>

@@ -20,13 +20,13 @@ const Stats = () => {
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className="text-center text-black transform hover:scale-105 transition-transform"
+                className="text-center text-blue-600 transform hover:scale-105 transition-transform"
               >
                 <div className="inline-block p-3 bg-yellow-500/20 rounded-full mb-3">
                   <div className="text-yellow-300">{stat.icon}</div>
                 </div>
                 <div className="text-3xl font-bold mb-1">{stat.value}</div>
-                <div className="text-sm text-gray-700">{stat.label}</div>
+                <div className="text-sm text-gray-700 dark:text-white">{stat.label}</div>
               </div>
             ))}
           </div>
